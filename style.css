@@ -41,7 +41,7 @@ html {
   align-items: center;
   align-content: center;
   justify-content: center;
-  gap: 16rem;
+  gap: 17rem;
   background-color: transparent;
   max-width: 100%;
   padding: 1rem;
@@ -80,6 +80,7 @@ html {
 
 .BtnLogin button {
   padding: 10px;
+margin-left:5px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
