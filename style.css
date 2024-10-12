@@ -4,7 +4,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -19,6 +18,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 /* AREA DEL HEADER */
@@ -29,17 +34,21 @@
 }
 
 .Cabecera .BarNav {
-  display: flex;
-  flex-wrap: wrap;
 
+  position: fixed;
+  width: 100%;
+  display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   gap: 16rem;
-  background-color: #ffff;
+  background-color: transparent;
   max-width: 100%;
-  padding: 18px;
+  padding: 1rem;
+  z-index: 100;
 }
+
+
 
 .Cabecera .Logo {
   padding-left: 20px;
@@ -481,14 +490,12 @@
   }
 
   & .cta {
-    flex: 1 1 500px;
     width: 65vw;
     height: 447px;
     padding: 30px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -507,21 +514,21 @@
   & .checks {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     z-index: 100;
   }
 
   & .cta button {
-    padding: 20px;
+    padding: 1rem;
     background: #bc261a;
     color: #ffffff;
     border: 3px solid;
-    border-radius: 30px;
+    border-radius: 3rem;
     width: 14vw;
     font-family: Plus Jakarta Sans;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 700;
-    line-height: 22.58px;
+    line-height: 1.5rem;
     letter-spacing: 0.19px;
     margin-top: 2rem;
     z-index: 100;
@@ -549,15 +556,13 @@
     background-color: #080202;
     color: #fff;
     margin-inline: auto;
-    padding: 3%;
+    padding: 6%;
     display: flex;
-    flex: 1 1 200px;
     justify-content: space-between;
   }
 
   & .Politics {
     display: flex;
-
     gap: 40px;
   }
 
@@ -603,6 +608,363 @@
   }
 }
 
-@media (min-width:320px){
+@media (max-width: 360px) {
+
+  .Cabecera {
+    width: 97%;
+    height: auto;
+  }
+
+  .BarNav {
+    position: relative !important;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+
+
+  }
+
+
+
+  .Hero {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    height: auto;
+
+
+  }
+
+  .Services {
+    max-width: 100%;
+
+    & .Elementoiz {
+      max-width: 100%;
+      display: flex;
+      flex-flow: column;
+
+    }
+
+    & .Elementoiz h1 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0.16px;
+      line-break: loose;
+    }
+
+    & p {
+      text-align: center;
+      font-size: 18.87px;
+      letter-spacing: 0.3px;
+      line-height: 23.63px;
+
+
+    }
+
+    & .BotonesBajos {
+      width: 100%;
+
+    }
+
+    & .Elementoiz button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    & img {
+      max-width: 100%;
+    }
+
+  }
+
+  .Intro {
+    max-width: 100%;
+    height: auto;
+
+    & h2 {
+      font-size: 23px;
+      line-height: 30px;
+      letter-spacing: 0.16px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    & hr {
+      margin-top: 3rem;
+    }
+  }
+
+  .Categorias {
+    max-width: 100%;
+    height: fit-content;
+
+    & img {
+      max-width: 100%;
+      height: 300px;
+    }
+
+    & .Ctg_1 {
+      max-width: 100%;
+      margin-top: 3.0rem;
+      padding: 20px;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0px;
+
+
+      & .Roof {
+        height: auto;
+        width: 320px;
+        padding: 18px;
+
+
+        & h2 {
+          text-align: center;
+          font-size: 28px;
+
+        }
+
+        & p {
+          font-size: 18px;
+          text-align: center;
+          letter-spacing: 0.18px;
+        }
+
+        & button {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+  & .Ctg_2 {
+    max-width: 100%;
+    margin-top: 3.0rem;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0px;
+
+
+    & .Roof {
+      height: auto;
+      max-width: 100%;
+      padding: 18px;
+
+      & h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      & p {
+        font-size: 18px;
+        letter-spacing: 0.18px;
+        text-align: center;
+      }
+
+      & button {
+        width: 100%;
+      }
+    }
+
+
+  }
+
+  .Ctg_4 {
+    max-width: 100%;
+    margin-top: 3.0rem;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+
+    & .Roof {
+      height: auto;
+      width: 100%;
+      padding: 16px;
+
+      & h2 {
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+      }
+
+      & p {
+        font-size: 18px;
+        letter-spacing: 0.16px;
+        text-align: center;
+
+      }
+
+      & button {
+        width: 100%;
+      }
+
+    }
+
+    .Ctg_6 {
+      max-width: 100%;
+      margin-top: 3.0rem;
+      padding: 20px;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      gap: 0px;
+
+
+      & .Roof {
+        height: auto;
+        max-width: 100%;
+        padding: 20px;
+
+
+        & h2 {
+          text-align: center;
+        }
+
+        & p {
+          font-size: 18px;
+          letter-spacing: 0.18px;
+          text-align: center;
+        }
+
+        & button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .Modales {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+
+
+    & .Sec_M {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+
+
+    }
+
+    & .Modal1 {
+      width: 100%;
+      height: 423px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      & h2 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+
+
+    }
+
+    & .FAQ {
+      max-width: 100%;
+      height: auto;
+
+      & .accordion {
+        width: 100%;
+
+        & summary {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .CTA {
+    display: flex;
+    max-width: 100%;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+   
+    
+  }
+
+  .CTA2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+  }
+
+  .cta{
+   max-width: 100%;
+   padding: 1 rem;
+    
+ 
+  }
+
+
+
+  .Contacto{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+    .contacto{
+      display: flex;
+      flex-direction: column;
+
+      & h2{
+        font-size: 18px;
+        line-break: loose;
+      }
+    }
+  
+    .Politics{
+      display: flex;
+      flex-direction: column;
+      
+    }
 }
+
+
