@@ -18,7 +18,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 
 
 }
@@ -609,7 +608,7 @@ margin-left:5px;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 760px) {
 
   .Cabecera {
     width: 97%;
