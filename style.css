@@ -18,6 +18,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 
 
 }
@@ -925,44 +926,94 @@ margin-left:5px;
   }
 
   .CTA2 {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
+    max-height: 100%;
+    
+
   }
 
   .cta {
     max-width: 100%;
-    padding: 1 rem;
-
-
+   
+   
   }
 
+  .cta h2{
+    width: 320px;
+
+    font-size: 28px !important;
+     text-align: center;
+     line-height: 30px !important;
+  }
+
+
+
+  .checks{
+    display: flex;
+   align-items: center;
+   gap: 15px !important;
+  }
+
+  .checks label{
+      font-size: 20px !important;
+      line-height: 23px !important;
+      text-align: center !important;
+  }
+
+  .checks + button{
+    width: 70vw !important;
+    height: auto;
+    border-radius: 15px!important;
+    padding: 1rem !important;
+    font-size: 20px !important;
+    line-height: 25px!important;
+    
+  }
 
 
   .Contacto {
     max-width: 100%;
-    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .hijo{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 
   }
 
-
   .contacto {
+    height: 100vh !important;
     display: flex;
     flex-direction: column;
-
+    
     & h2 {
-      font-size: 18px;
-      line-break: loose;
+      max-width:100% ;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      
     }
+
+
+
+
   }
 
   .Politics {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+
+    & a{
+        font-size: 15px;
+    }
+    
 
   }
 }
