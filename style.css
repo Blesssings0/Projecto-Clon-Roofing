@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -22,7 +22,7 @@
 
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -913,18 +913,18 @@ html{
     }
   }
 
-  .CTA {
+  .CTA{
     display: flex;
     max-width: 100%;
-     flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-   
-    
+
+
+
   }
 
-  .CTA2{
+  .CTA2 {
     width: 100%;
     position: absolute;
     top: 0;
@@ -932,16 +932,16 @@ html{
     height: auto;
   }
 
-  .cta{
-   max-width: 100%;
-   padding: 1 rem;
-    
- 
+  .cta {
+    max-width: 100%;
+    padding: 1 rem;
+
+
   }
 
 
 
-  .Contacto{
+  .Contacto {
     max-width: 100%;
     height: auto;
     display: flex;
@@ -950,21 +950,19 @@ html{
   }
 
 
-    .contacto{
-      display: flex;
-      flex-direction: column;
+  .contacto {
+    display: flex;
+    flex-direction: column;
 
-      & h2{
-        font-size: 18px;
-        line-break: loose;
-      }
+    & h2 {
+      font-size: 18px;
+      line-break: loose;
     }
-  
-    .Politics{
-      display: flex;
-      flex-direction: column;
-      
-    }
+  }
+
+  .Politics {
+    display: flex;
+    flex-direction: column;
+
+  }
 }
-
-
