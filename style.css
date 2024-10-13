@@ -615,8 +615,14 @@ margin-left:5px;
     height: auto;
   }
 
- .Logo img{
-  width: 90px;
+ .Logo{
+  height: 50px;
+
+  & img{
+    width: 70px;
+    height:50px ;
+
+  }
  }
 
   .BarNav {
@@ -624,7 +630,7 @@ margin-left:5px;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 60px !important;
+    gap: 40px !important;
     height: auto;
     
   }
@@ -641,8 +647,10 @@ margin-left:5px;
 
   .BtnLogin{
     display: flex;
+    flex-direction: column;
+    align-items: end;
     padding: 10px;
-    gap: 10px;
+    gap: 5px;
     
 
     & button:first-child{
@@ -655,9 +663,8 @@ margin-left:5px;
 
     & button:last-child{
       width: 150px;
-      padding: 12px;
       font-size: 12px;
-
+          
     }
   }
 
